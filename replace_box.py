@@ -13,12 +13,9 @@ with open('lets_7.pickle','rb') as f:
 
 
 def replace_box(s, frac = 0.6):
-    """Generate the grapheme clusters for the string s. (Not the full
-    Unicode text segmentation algorithm, but probably good enough for
-    Devanagari.)
-
+    """
     Copied this function from a Stackoverflow answer https://stackoverflow.com/a/6806203/3638137 and modified a bit.
-
+    
     """
     try:
         accepted_chars = globals()['let{0:02d}'.format(int(frac*100))]
